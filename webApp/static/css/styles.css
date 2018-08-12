@@ -1,0 +1,256 @@
+html{
+    display: block;
+}
+
+/**Bootstrap**/
+.btn-primary {
+    background-color: #333;
+    border-color: #333;
+    border-radius: 20px;
+    width: 50% !important;
+    margin: 20px 0px;
+    
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.btn-primary:hover{
+    background-color: #888;
+    border-color: #888;
+}
+
+/***/
+
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: rgba(234,202,0, 1);
+}
+
+h1{
+    margin: 0px;
+}
+
+.title{
+    background-color: #161616;
+    border-bottom: 3px solid #eaca00;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.app-title{
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+
+
+.login, .register{
+    width: 100%;
+    height: 100vh;
+    background: 
+    linear-gradient(
+        rgba(22,22,22, .9),
+        rgba(234,202,0, 1) 
+    ),
+    url(../images/softwareEngineering.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.login a, .register a{
+    color: black;
+}
+
+.login a:hover, .register a:hover{
+    color: #555;
+}
+
+.login input, .register input{
+    margin: 0px;
+}
+
+.login-screen, .register-screen{
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.register-form{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .login-screen, .register-screen{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .login-screen, .register-screen{
+        width: 80%;
+    }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+input[type='radio'] { transform: scale(2); }
+
+.radio {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 0px;
+	color: #161616 !important;
+}
+
+.icon{
+    float: left;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 38px;
+    left: 20px;
+    display: inline-block;
+}
+
+.login-screen .btn-primary, .register-screen .btn-primary{
+    width: 100% !important;
+}
+
+.login-screen .btn-primary{
+    margin: 20px 0px;
+}
+
+.login-screen .login-field, .register-screen .register-field{
+    padding-left: 50px;
+}
+
+.dashboard{
+    width: 100%;
+    background: 
+    linear-gradient(
+        rgba(22,22,22, .9),
+        rgba(234,202,0, 1) 
+    ),
+    url(../images/softwareEngineering.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .dashboard{
+        background: linear-gradient(rgba(22,22,22, 1), rgba(234,202,0, 1)) !important;
+        background-image: none;
+    }
+}
+
+.boxSize{
+    padding: 30px;
+}
+
+.dashBox{
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #333;
+}
+
+.largeBox{
+    height: 500px;
+}
+
+.largestBox{
+	height: 650px;
+}
+
+#accordion{
+	margin: 15px 0px;
+}
+
+#accordion button.btn.btn-link {
+    color: #161616;
+}
+
+.noAttendance{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.card-body th{
+	font-weight: bold;
+	
+}
+
+.card-body tr{
+	text-align: center;
+}
+
+.card-header{
+	    padding: 0px 1.25rem;
+}
+
+.overflow{
+    overflow-y: auto;
+}
+
+
+
+.dashboardContent{
+    padding: 35px;
+}
+
+table{
+    margin: 10px 0px;
+    width: 100%;
+}
+
+th{
+    width: 200px;
+    background-color: #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+#classTable, #classDisplay, #studentsClassTable{
+    text-align: center;
+}
+
+#classTable input.btn.btn-primary.btn-large.btn-block, #classDisplay input.btn.btn-primary.btn-large.btn-block, #studentsClassTable input.btn.btn-primary.btn-large.btn-block{
+    margin: 0px auto;
+}
+
+.attendanceButton{
+    padding: 5px 15px !important;
+    font-size: 15px !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+
+.logout{
+    display: inline-block;
+    float: right;
+    margin-top: -33px;
+    margin-right: 15px;
+    font-weight: bold;
+}

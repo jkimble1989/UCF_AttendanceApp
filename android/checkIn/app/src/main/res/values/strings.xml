@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">CheckMate</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_id">Student/Professor ID</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_add_device">MAC Address </string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="add_device">Add Device</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_pass_conf">Passwords must match</string>
+    <string name="error_radio_button">Please select your status</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings for Teacher View -->
+    <string name="action_settings">Settings</string>
+    <string name="text_enable">Enable Bluetooth</string>
+    <string name="text_check_in">Check in</string>
+
+    <!-- String for Student View -->
+    <string name="success">Successfully signed in!</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="web_charset">UTF-8</string>
+    <string name="devFound">devices found</string>
+    <string name="canary_register">Register</string>
+    <string name="login_fail">Error, account might already exist.</string>
+    <string name="login_success">Successfully registered, now log in.</string>
+    <string name="bt_enable">Enable bt</string>
+    <string name="bt_disable">Disable bt</string>
+    <string name="mac_update_success">MAC updated successfully!</string>
+    <string name="mac_update_failure">Invalid MAC</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="start_teacher_scan">Check in</string>
+    <string name="add_mac_prompt">You can add your MAC address here</string>
+
+</resources>

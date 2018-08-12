@@ -1,0 +1,80 @@
+{% extends "header.html" %}
+
+{% block head %}{{ super() }}{% endblock %}
+
+{% block body %}
+{% if session['logged_in'] %}
+<div class="title">
+    <h1>Student Dashboard</h1>
+    <a href="/logout" class="logout">Logout!</a>
+</div>    
+    
+<div class="dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm boxSize">
+                <div class="dashBox">
+                    <h2> Update Your Info </h2>
+                    <form action="/editStuData" method="POST">
+                    <input type="text" class="register-field" value="" placeholder="First Name" name="name">
+					<input type="text" class="register-field" value="" placeholder="Last Name" name="lastName">
+                    <input type="text" class="register-field" value="" placeholder="MAC" name="mac">
+			         <input type="submit" value="Update" class="btn btn-primary btn-large btn-block" >
+                    </form>	 
+                </div>    
+            </div>
+            <div class="col-sm boxSize overflow">
+                <div class="dashBox overflow">
+                    <h2> Your Classes </h2>
+                    <div id="studentsClasses">
+						<div id="studentsClassTable">
+                        <table>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Class Code</th>
+                            </tr>
+                            <tbody id="studentsClassesData">
+                            </tbody>    
+                        </table>
+						</div>
+					</div>
+                </div>
+            </div>
+            <!--<div class="col-sm boxSize">
+                <div class="dashBox overflow">
+                    
+                    
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="dashBox overflow largeBox">
+                <h2> Join a Class </h2>
+                <input id="myInput" type="text" placeholder="Search..">
+                <div id="classStudentDisplay">
+                    <div id="classTable">
+                        <table>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Class Code</th>
+                                <th>Professor</th>
+                                <th>Professor Email</th>
+                                <th>Join</th>
+                            </tr>
+                            <tbody id="classTableData">
+                            </tbody>    
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+ 
+Please log in first! Error #2
+{% endif %}
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "header.html" %}
+
+{% block head %}{{ super() }}{% endblock %}
+
+{% block body %}
+<body>
+    <div class="register">
+        <div class="register-screen">
+            <img src="../static/images/UCF_Logo.jpg">
+            <div class="app-title">
+                <h1>Register</h1>
+            </div>
+
+            <div class="register-form">
+                <!-- <h2>Register</h2> -->
+                {% if session['logged_in'] %}
+                <p>You're logged in already!</p>
+                {% else %}
+				
+				<form action="/register" method="POST">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <input type="text" class="register-field" value="" placeholder="Email" name="email">
+                    
+                    <div class="icon"><i class="fas fa-id-card"></i></div>
+                    <input type="text" class="register-field" value="" placeholder="PID" name="pid">
+                    
+                    <div class="icon"><i class="fas fa-angle-up"></i></div>
+                    <input type="text" class="register-field" value="" placeholder="First Name" name="FirstName">
+                    
+                    <div class="icon"><i class="fas fa-angle-double-up"></i></div>
+                    <input type="text" class="register-field" value="" placeholder="Last Name" name="LastName">
+                    
+                    <div class="icon"><i class="fas fa-unlock"></i></div>
+                    <input type="password" class="register-field" value="" placeholder="Password" name="password">
+                    
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                    <input type="password" class="register-field" value="" placeholder="Confirm Password" name="confirm">
+                    
+				    <div class="radio"><input type="radio" name="userType" value="1"> Professor</div>
+				    <div class="radio"><input type="radio" name="userType" value="0"> Student</div>
+                    <input type="submit" value="Register" name="professor" class="btn btn-primary btn-large btn-block" >
+                </form>
+                <br>
+                <a href="/">Need to log in?</a>
+                {% endif %}
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

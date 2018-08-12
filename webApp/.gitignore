@@ -1,0 +1,6 @@
+err.log
+brainstorm
+*.pyc
+*.db
+*.journal
+temp
